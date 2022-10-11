@@ -3,7 +3,7 @@ const express = require('express');
  const cors = require('cors'); 
   
  const { mongoose } = require('./db.js'); 
- var employeeController = require('./controllers/employeeController.js'); 
+  
   
  var app = express(); 
  app.use(bodyParser.json()); 
@@ -11,5 +11,4 @@ const express = require('express');
   
  app.listen(3000, () => console.log('Server started at port : 3000')); 
   
-  
- app.use('/employees', employeeController);
+ 
